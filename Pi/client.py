@@ -8,7 +8,7 @@ except socket.error as err:
     print("Socket creation failed with error {}".format(err))
 
 port = 12345
-host_ip = '10.0.0.28'
+host_ip = ''
 
 client.connect((host_ip, port))
 
