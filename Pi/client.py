@@ -56,10 +56,8 @@ print("socket connected to {}".format(host_ip))
 
 client.send("Client connected".encode())
 
-"""
 run this command in python terminal when in the rpi_ws281x/python directory
 sudo PYTHONPATH=".:build/lib.linux-armv7l-2.7" python examples/strandtest.py
-"""
 
 
 strip = LED()
