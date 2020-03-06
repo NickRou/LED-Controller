@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ title }}</title>
+    <title>Pi Web Server</title>
 </head>
 <body>
-    <h1>Input a color to display on LED strip</h1>
-    <form action="/color" method="post">
-        <p>Enter Color: </p>
-        <p><input type="text" name="color"/></p>
+    <h1>Input a color or animation to display on LED strip</h1>
+    <a href="https://matplotlib.org/3.1.0/gallery/color/named_colors.html" target="_blank">Supported color names</a>
+    <p>Supported animations: rainbow, rainbow cycle</p>
+    <form action="/" method="post">
+        <p>Enter color or animation: </p>
+        <p><input type="text" name="userInput"/></p>
         <p><input type="submit" value="submit"/></p>
     </form>
 </body>
