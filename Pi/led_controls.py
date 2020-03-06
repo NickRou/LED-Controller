@@ -17,22 +17,22 @@ class LED:
 
     def colorWipe(self, color):
         """Wipe color across display a pixel at a time."""
-        r, g, b = self.getRGB(color)
+        g, r, b = self.getRGB(color)
         for i in range(self.strip.numPixels()):
-            self.strip.setPixelColor(i, Color(r, g, b))
+            self.strip.setPixelColor(i, Color(g, r, b))
             self.strip.show()
 
     def getRGB(self, color):
         re.sub('[A-Za-z]+', '', color)
         color = color.lower()
         if color == 'orange':
-            return 255, 165, 0
+            return 130, 255, 0
         elif color == 'red':
-            return 255, 0, 0
-        elif color == 'green':
             return 0, 255, 0
+        elif color == 'green':
+            return 255, 0, 0
         elif color =='blue':
             return 0, 0, 255
         else:
             print("RGB for this color not recorded. Setting to default.")
-            return 255, 165, 0
+            return 130, 255, 0
