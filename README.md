@@ -1,4 +1,4 @@
-# Controlling LED animations through Python Socket and Google Speech-To-Text
+# Controlling LED animations through Flask Web Server on Pi
 
 ## Hardware 
 * Raspberry Pi 3 Model B+
@@ -8,7 +8,6 @@
 
 ## Libraries
 * NeoPixel (https://github.com/jgarff/rpi_ws281x)
-* SpeechRecognition (https://pypi.org/project/SpeechRecognition/)
 
 ## Circuit
 ![](images/circuit.png)
